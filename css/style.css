@@ -125,10 +125,11 @@ position:relative;
 width:100%;
 min-height:auto;
 overflow-y:hidden;
-background:url(../img/bg-pattern.png), #926db4;
+/* background:url(../img/bg-pattern.png), #926db4;
 background:url(../img/bg-pattern.png), -webkit-linear-gradient(to left, #926db4, #234ca3);
-background:url(../img/bg-pattern.png), linear-gradient(to left, #926db4, #234ca3);
-color:#fff
+background:url(../img/bg-pattern.png), linear-gradient(to left, #926db4, #234ca3);*/
+/* color:#fff  */
+background:url(../img/water.jpeg) no-repeat 0 0; 
 }
 header .header-content {
 text-align:center;
@@ -146,6 +147,12 @@ margin-top:0;
 margin-bottom:30px;
 font-size:80px
 
+}
+header .header-content .header-content-inner h2 {
+color:#FFFFFF;
+font-size:18px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-shadow: 0.8px 0.8px #000000
 }
 header .header-content .header-content-inner .list-badges {
 margin-bottom:25px
@@ -175,7 +182,7 @@ max-width:none;
 margin:0;
 position:absolute;
 top:50%;
-transform:translateY(-50%)
+transform:translateY(-60%)
 }
 header .header-content .header-content-inner h1 {
 font-size:85px
