@@ -277,8 +277,8 @@ font-size:30px
 }
 section.features .feature-item i {
 font-size:80px;
-background:-webkit-linear-gradient(to left, #7b4397, #dc2430);
-background:linear-gradient(to left, #7b4397, #dc2430);
+background:-webkit-linear-gradient(to left, #7afdac, #519ad6);
+background:linear-gradient(to left,#7afdac, #519ad6);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent
 }
