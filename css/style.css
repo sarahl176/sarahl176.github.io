@@ -149,7 +149,7 @@ background:url(../img/bg-pattern.png), linear-gradient(to left, #926db4, #234ca3
   filter: brightness(80%);
   width: 100%;
   height: 100%;
-
+  background-repeat: false;
 }
 header .header-content {
 text-align:center;
