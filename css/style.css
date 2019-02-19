@@ -17,7 +17,8 @@ width:100%
 }
 body {
 font-family:'Courier New', Courier, monospace;
-webkit-tap-highlight-color:#222;
+overflow-x: hidden;
+-webkit-tap-highlight-color:#222;
 }
 .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
 font-family:'Courier New', Courier, monospace;
@@ -158,7 +159,7 @@ position:relative
 
 header .header-content .header-content-inner {
 position:relative;
-max-width:500px;
+max-width:100%;
 margin:0 auto
 }
 header .header-content .header-content-inner h1 {
@@ -177,14 +178,14 @@ text-shadow: 0.8px 0.8px #000000;
 /* background: #39dac4; */
 }
 header .header-content .header-content-inner .list-badges {
-margin-bottom:25px
+margin-bottom:0px;
 }
 header .header-content .header-content-inner .list-badges img {
 height:50px;
-margin-bottom:25px
+margin-bottom:0px;
 }
 header .device-container {
-max-width:300px;
+max-width:100%;
 margin:0 auto 100px
 }
 header .device-container .screen img {
@@ -192,7 +193,7 @@ border-radius:3px
 }
 @media (min-width:768px) {
 header {
-min-height:100%
+min-height:100vh;
 }
 header .header-content {
 text-align:left;
@@ -200,7 +201,7 @@ padding:0;
 height:100vh
 }
 header .header-content .header-content-inner {
-max-width:none;
+max-width:100%;
 margin:0;
 position:absolute;
 top:50%;
@@ -210,7 +211,7 @@ header .header-content .header-content-inner h1 {
 font-size:85px
 }
 header .device-container {
-max-width:none;
+max-width:100%;
 max-height:calc(0vh);
 margin:100px auto 0
 }
@@ -241,7 +242,7 @@ section h2 {
 font-size:50px
 }
 section.download {
-padding:150px 0;
+padding:100px 0;
 position:relative
 }
 section.download h2 {
@@ -257,9 +258,9 @@ margin-bottom:0
 }
 section.download .badges .badge-link img {
 height:180px;
-padding:1px;
-   border:1px solid #021a40;
-   background-color:rgb(250, 232, 173);
+padding:0px;
+border-radius: 80%;
+object-fit: cover;
 }
 @media (min-width:768px) {
 section.download .badges .badge-link {
@@ -298,7 +299,8 @@ max-width:none;
 }
 section.features .feature-item {
 text-align:center;
-margin-bottom:100px
+margin-bottom:50px;
+margin-top: 40px;
 }
 section.contact h2, section.cta .cta-content h2 {
 margin-top:0;
@@ -307,6 +309,121 @@ margin-bottom:25px
 section.features .feature-item h3 {
 font-size:30px
 }
+section.features .text-project h3 {
+  font-size: 20px;
+}
+section.features .text-project p {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+
+section.features .project-img .image img{
+    
+    width:600px;
+    height:500px;
+    border-radius: 20px;
+    object-fit: cover;
+  
+}
+
+
+
+section.features .project-img .mySlides {
+  display: none;
+}
+
+section.features .project-img {
+  width: 600px;
+  height: 500px;
+}
+section.features .project-img .mySlides img{
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+} 
+
+/* section.features  .project-img .mySlides img{
+  max-width: 600px;
+  height: 500px
+} */
+
+/* Next & previous buttons */
+section.features .project-img .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+section.features .project-img .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left: 555px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+section.features .project-img .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+section.features .project-img .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+section.features .project-img .caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+section.features .project-img .demo {
+  opacity: 0.6;
+}
+
+section.features .project-img .active,
+.demo:hover {
+  opacity: 1;
+}
+
+section.features .project-img .hover-shadow {
+  transition: 0.3s;
+}
+
+section.features .project-img .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 section.features .feature-item i {
 font-size:80px;
 background:-webkit-linear-gradient(to left, #7afdac, #519ad6);

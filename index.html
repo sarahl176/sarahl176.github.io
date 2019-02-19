@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 
 <head>
@@ -37,11 +38,43 @@
       }, 10000);
     });
   </script> -->
-<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 
-<body id="page-top">
+<body id="page-top" onload=showSlides(1)>
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -124,7 +157,7 @@
       </div>
     </div>
   </section>
-  <section id="features" class="features" >
+  <section id="features" class="features">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -136,40 +169,98 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-lg-8">
+            <div class="project-img">
+              <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="img/lake.jpg">
+              </div>
 
-        <div class="col-md-12">
-          <div class="container-fluid">
-            <div class="row" >
-              <div class="col-md-6">
-                <div class="feature-item"><i class="icon-screen-smartphone text-primary"></i>
-                  <h3>project 1</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
+              <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <img src="img/water.jpeg">
               </div>
-              <div class="col-md-6">
-                <div class="feature-item"><i class="icon-camera text-primary"></i>
-                  <h3>project 2</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                </div>
+
+
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
               </div>
+
+          </div>
+        </div>
+     
+      </div>
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-2">
+            <div class="feature-item"><i class="icon-screen-desktop text-primary"></i>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="feature-item"><i class="icon-present text-primary"></i>
-                  <h3>project 3</h3>
-                  <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature-item"><i class="icon-lock-open text-primary"></i>
-                  <h3>project 4</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-project">
+              <h3>project 1</h3>
+              <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="project-img">
+            <a class="image">
+              <img src="img/lake.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-2">
+            <div class="feature-item"><i class="icon-energy text-primary"></i>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-project">
+              <h3>project 2</h3>
+              <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="project-img">
+            <a class="image">
+              <img src="img/lake.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-2">
+            <div class="feature-item"><i class="icon-people text-primary"></i>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-project">
+              <h3>project 3</h3>
+              <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
   </section>
   <section class="cta">
