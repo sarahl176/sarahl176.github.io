@@ -1,10 +1,10 @@
 .heading-font {
-font-family:'Courier New', Courier, monospace;
+font-family:Inconsalata, sans-serif;
 font-weight:200;
 letter-spacing:1px
 }
 .body-font {
-font-family:'Courier New', Courier, monospace;
+font-family:Inconsalata, sans-serif;
 }
 .alt-font {
 font-family:'Courier New', Courier, monospace;
@@ -21,7 +21,7 @@ overflow-x: hidden;
 -webkit-tap-highlight-color:#222;
 }
 .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
-font-family:'Courier New', Courier, monospace;
+font-family:Inconsolata, sans-serif;
 font-weight:200;
 letter-spacing:1px;
 z-index: 90000;
@@ -166,8 +166,9 @@ header .header-content .header-content-inner h1 {
 margin-top:0;
 margin-bottom:30px;
 font-size:80px;
-background: #fff;
-color: rgb(70, 185, 189)
+color: #fff;
+text-shadow: 0.8px 0.8px #000000;
+font-family:Georgia, Times, 'Times New Roman', serif;
 }
 header .header-content .header-content-inner h2 {
 color:#FFFFFF;
@@ -236,7 +237,7 @@ font-size:100px;
     padding: 5px; 
 }
 section {
-padding:100px 0
+padding:200px 
 }
 section h2 {
 font-size:50px
@@ -244,6 +245,9 @@ font-size:50px
 section.download {
 padding:100px 0;
 position:relative
+}
+section.download p {
+  text-align: left;
 }
 section.download h2 {
 margin-top:0;
@@ -261,6 +265,8 @@ height:180px;
 padding:0px;
 border-radius: 80%;
 object-fit: cover;
+position: relative;
+right: 0px;
 }
 @media (min-width:768px) {
 section.download .badges .badge-link {
@@ -271,7 +277,8 @@ section.download h2 {
 font-size:50px
 }
 
-}
+
+
 section.features .section-heading {
 margin-bottom:100px
 }
@@ -364,7 +371,8 @@ section.features .project-img {
   width: 600px;
   height: 500px;
   margin-bottom: 40px;
-  
+  border-radius: 10px;
+  margin-right: 80px;
 }
 
 section.features .project-img .mySlides img{
