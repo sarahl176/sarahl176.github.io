@@ -470,8 +470,8 @@ section.features .project-img .hover-shadow:hover {
 
 section.features .feature-item i {
 font-size:80px;
-background:-webkit-linear-gradient(to left, #7afdac, #519ad6);
-background:linear-gradient(to left,#7afdac, #519ad6);
+background:-webkit-linear-gradient(to left, #1673be, #75c1ff);
+background:linear-gradient(to left,#1673be, #75c1ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent
 }
