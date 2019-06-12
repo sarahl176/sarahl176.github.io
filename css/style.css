@@ -23,6 +23,7 @@ overflow-x: hidden;
 .navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
 font-family:Inconsolata, sans-serif;
 font-weight:100;
+overflow-x: hidden;
 letter-spacing:1px;
 z-index: 90000;
 }
@@ -31,7 +32,6 @@ a {
 -moz-transition:all .35s;
 transition:all .35s;
 color:#fdcc52;
-font-size: 8px;
 }
 a:focus, a:hover {
 color:#fcbd20
@@ -249,8 +249,9 @@ font-size:100px;
 
 
 section.features .device-container, section.features .feature-item {
-max-width:300px;
+width: 100%;
 margin:0 auto;
+
 margin-bottom: 50px;
 }
 section.features .device-container {
@@ -331,11 +332,14 @@ section.features .project-img .image img{
 
 section.features .project-img .mySlides {
   display: none;
+  overflow: hidden;
 }
 
 section.features .project-img {
-  width: 600px;
-  height: 500px;
+  max-width: 600px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
   margin-bottom: 40px;
   border-radius: 10px;
   margin-right: 80px;
@@ -350,8 +354,11 @@ section.features .project-img .mySlides img{
 
 
 section.features .project-img1 {
-  width: 600px;
-  height: 500px;
+  max-width: 600px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  display: block;
   margin-bottom: 40px;
   background-color: #fff; 
   overflow-x: auto;
@@ -370,11 +377,14 @@ section.features .project-img1 .slide img{
   /* object-fit: cover; */
 } 
 section.features .project-img2 {
-  width: 600px;
+  max-width: 600px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  display: block;
   align-items: flex-end;
   align-content: flex-end;
   align-self: flex-end;
-  height: 500px;
   margin-bottom: 40px;
   background-color: #fff; 
   overflow-x: auto;
@@ -418,7 +428,7 @@ section.features .project-img .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-left: 555px;
+  margin-left: 530px;
   width: auto;
   padding: 16px;
   margin-top: -50px;
