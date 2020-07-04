@@ -273,7 +273,6 @@ section.contact {
 }
 .icon-wrapper .tooltip {
   visibility: hidden;
-  width: 120px;
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -282,7 +281,7 @@ section.contact {
   /* Position the tooltip text */
   position: relative;
   z-index: 1;
-  left: -53%;
+  left: 15%;
   top: 0%;
 
   /* Fade in tooltip */
