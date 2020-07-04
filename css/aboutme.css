@@ -1,59 +1,62 @@
 section {
-padding:100px 
+  padding: 100px;
 }
 section h2 {
-font-size:30px
+  font-size: 30px;
 }
 section.aboutme {
-padding:100px 0;
-position:relative
+  padding: 100px 0;
+  position: relative;
 }
 
 section.aboutme .section-heading p {
-    text-align: left;
+  text-align: left;
 }
 section.aboutme .section-heading h2 {
-    margin-top:0;
-font-size:20px;
-text-align: left;
-font-display: bold;
+  margin-top: 0;
+  font-size: 20px;
+  text-align: left;
+  font-display: bold;
 }
 section.aboutme p {
-text-align: left;
+  text-align: left;
 }
 section.aboutme h2 {
-margin-top:0;
-font-size:10px;
-text-align: left;
-font-display: bold;
+  margin-top: 0;
+  font-size: 10px;
+  text-align: left;
+  font-display: bold;
 }
 section.aboutme .badges .badge-link {
-display:block;
-margin-bottom:25px
+  display: block;
+  margin-bottom: 25px;
 }
 section.aboutme .badges .badge-link:last-child {
-margin-bottom:0
+  margin-bottom: 0;
 }
 section.aboutme .badges .badge-link img {
-height:180px;
-padding:0px;
-border-radius: 80%;
-object-fit: cover;
-position: relative;
-right: 0px;
+  height: 180px;
+  padding: 0px;
+  border-radius: 80%;
+  object-fit: cover;
+  position: relative;
+  right: 0px;
 }
-section.aboutme .skills .skill-img img{
-width: 50px;
-height: 50px;
-position: left;
+section.aboutme .skills .skill-img img {
+  height: 50px;
+  position: left;
 }
-@media (min-width:768px) {
-section.aboutme .badges .badge-link {
-display:inline-block;
-margin-bottom:0
+section.aboutme .skills {
+  display:flex;
+  justify-self:flex-end;
 }
-section.aboutme h2 {
-font-size:30px;
-font-family: Inconsolata, sans-serif;
-}
+@media (min-width: 768px) {
+  section.aboutme .badges .badge-link {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  section.aboutme h2 {
+    font-size: 30px;
+    font-family: Inconsolata, sans-serif;
+  }
 }
